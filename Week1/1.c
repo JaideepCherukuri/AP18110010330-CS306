@@ -5,7 +5,8 @@ void main(){
     char current,input[20];
     printf("Enter input string \t :");
     scanf("%s",input);
-    while((current=input[i++])!='\0'){
+    while((current=input[i++])!='\0')
+    {
         switch(state)
         {
             case 0: if(current=='a')
