@@ -11,9 +11,9 @@ int check_keyword(char s[]) //linear search
 			return 1;
 	return 0;
 }
-/*write a function to store identifier in symbol table
-Check whether the id is already available in the symbol table, if available,
-ignore. otherwise add it.*/
+/*Function to store identifier in symbol table and also checks whether the id is already available in the symbol table, if available,
+ignore. 
+Otherwise adds it to symbol table.*/
 void store_symb_tab(char id[], char symb_tab[][30])
 {
 	int i;
@@ -86,7 +86,7 @@ int main()
 				break;
 			case 5:
 				if(c=='='){
-					//write code to print specific operator like <= or >=
+					//code to print specific operator like <= or >=
 					fseek(fp1,-2,SEEK_CUR); //go back 2 chars
 					c=fgetc(fp1); // read '<' or '>' again
 					if(c=='<')
@@ -111,7 +111,7 @@ int main()
 				break;
 			case 8:
 				if(c=='='){
-					//write code to print specific operator like == or !=
+					//code to print specific operator like == or !=
 					fseek(fp1,-2,SEEK_CUR); //go back 2 chars
 					c=fgetc(fp1); // read '!' or '=' again
 					if(c=='=')
@@ -155,8 +155,5 @@ int main()
 		fprintf(fp2,"\ncomment did not close");
 	fclose(fp1);
 	fclose(fp2);
-	// To print symbol table add below comments
-	//for(int i=0; strcmp(symb_tab[i],"")&&i<20;++i)
-    	//   printf("\n%s",symb_tab[i]);
 	return 0;
  }
