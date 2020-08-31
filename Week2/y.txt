@@ -1,4 +1,4 @@
-330: number
+111: number
 main : identifier
 (
 )
@@ -12,7 +12,6 @@ b : identifier
 . 
 330: number
 ;
-/': invalid lexeme
 <: relational operator Less Than
 >: relational operator Greater Than
 <: relational operator Less Than
