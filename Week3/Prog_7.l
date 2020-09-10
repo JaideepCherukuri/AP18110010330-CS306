@@ -6,7 +6,7 @@
 .*  fprintf(yyout,"%s",yytext);
 \n  fprintf(yyout,"\n%d ",++c);
 %%
-main(int a,char **s) // command run line: a 6in.txt
+main(int a,char **s) // command run line: a Prog_6_input.txt
 {
  yyin=fopen(s[1],"r");
  yyout=fopen("7out.txt","w"); 
